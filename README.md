@@ -1,36 +1,15 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg)
+![](../../workflows/gds/badge.svg)
 
-# Tiny Tapeout Analog Project Template
+# tt_um_tillwitt_dac8r: 8-bit current-steering DAC with on-chip reference
 
-- [Read the documentation for project](docs/info.md)
+Tiny Tapeout analog project (sky130, 2x2 tiles) for the TTSKY26e shuttle.
 
-## What is Tiny Tapeout?
+8-bit NMOS current-steering DAC (0.5 mA full scale, 1.96 uA/LSB) with an on-chip 31.4 uA reference current source,
+63 per-bit trim bits for calibration at the operating temperature, an on-chip temperature sensor, a serial interface
+and two bare test transistors (NMOS, PMOS) on their own analog pins.
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+- Datasheet, protocol and test procedure: [docs/info.md](docs/info.md)
+- Layout: `gds/tt_um_tillwitt_dac8r.gds`, abstract: `lef/tt_um_tillwitt_dac8r.lef`
+- Verilog hull (interface, control block as gate-level netlist, analog core as black box): `src/`
 
-To learn more and get started, visit https://tinytapeout.com.
-
-## Analog projects
-
-For specifications and instructions, see the [analog specs page](https://tinytapeout.com/specs/analog/).
-
-## Enable GitHub actions to build the results page
-
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
-  - Bluesky [@tinytapeout.com](https://bsky.app/profile/tinytapeout.com)
+This repository holds the submission only. [Tiny Tapeout](https://tinytapeout.com), [analog specs](https://tinytapeout.com/specs/analog/).
