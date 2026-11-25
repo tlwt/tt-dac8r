@@ -469,7 +469,7 @@ MACRO tt_um_tillwitt_dac8r
   END VGND
   OBS
       LAYER nwell ;
-        RECT 27.620 3.230 204.190 208.100 ;
+        RECT 27.620 2.920 204.190 208.100 ;
       LAYER li1 ;
         RECT 16.500 1.200 331.810 211.255 ;
       LAYER met1 ;
